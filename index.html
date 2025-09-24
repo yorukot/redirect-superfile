@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://superfile.dev">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
 </head>
 <body>
     <p>Redirecting to <a href="https://superfile.dev">superfile.dev</a>...</p>
     <script>
-        window.location.href = "https://superfile.dev";
+        const currentPath = window.location.pathname;
+        const currentSearch = window.location.search;
+        const redirectUrl = "https://superfile.dev" + currentPath + currentSearch;
+        window.location.href = redirectUrl;
     </script>
 </body>
 </html>
