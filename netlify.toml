@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/*"
-  to = "https://superfile.dev"
+  to = "https://superfile.dev/:splat"
   status = 301
